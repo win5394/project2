@@ -2,17 +2,17 @@
 
 @import url(http://fonts.googleapis.com/earlyaccess/jejugothic.css);
 @font-face {
-    font-family: 'Jeju Gothic', serif;
+    font-family: 'Jeju Gothic', sans-serif;
     src: url('/fonts/Roboto-Regular.eot');
 }
 
 @font-face {
-    font-family: 'Jeju Gothic', serif;
+    font-family: 'Jeju Gothic', sans-serif;
     src: url('/fonts/Roboto-Regular.otf');
 }
 
 @font-face {
-    font-family: 'Jeju Gothic', serif;
+    font-family: 'Jeju Gothic', sans-serif;
     src: url('/fonts/Roboto-Regular.ttf');
 }
 
@@ -38,7 +38,7 @@ img {
 /***************/
 
 body {
-    font-family: 'Jeju Gothic', serif;
+    font-family: 'Jeju Gothic', sans-serif;
     text-align: center;
 }
 
