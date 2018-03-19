@@ -1,6 +1,21 @@
 /*******초기화 코드********/
 
 @import url(http://fonts.googleapis.com/earlyaccess/jejugothic.css);
+@font-face {
+    font-family: 'Jeju Gothic', serif;
+    src: url('/fonts/Roboto-Regular.eot');
+}
+
+@font-face {
+    font-family: 'Jeju Gothic', serif;
+    src: url('/fonts/Roboto-Regular.otf');
+}
+
+@font-face {
+    font-family: 'Jeju Gothic', serif;
+    src: url('/fonts/Roboto-Regular.ttf');
+}
+
 * {
     padding: 0;
     margin: 0;
