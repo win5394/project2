@@ -20,16 +20,39 @@
             <div class="main_nav1">
                 <ul>
                     <li><a href="#">PERRERO</a>
+                        <ul>
+                            <li class="dep2"><a href="#">Golden Pleasures</a></li>
+                        </ul>
                     </li>
                     <li><a href="#">HISTORY</a>
+                        <ul>
+                            <li class="dep2"><a href="#">Golden Pleasures</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">WEB TV</a>
+                        <ul>
+                            <li class="dep2"><a href="#">Golden Pleasures</a></li>
+                        </ul>
                     </li>
                 </ul>
             </div>
             <div class="main_nav2">
                 <ul>
                     <li><a href="#">PRODUCT</a>
+                        <ul>
+                            <li class="dep2"><a href="#">Golden Pleasures</a></li>
+                        </ul>
                     </li>
-                    <li><a href="#">HELP</a></li>
+                    <li><a href="#">SHOP</a>
+                        <ul>
+                            <li class="dep2"><a href="#">Golden Pleasures</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">HELP</a>
+                        <ul>
+                            <li class="dep2"><a href="#">Golden Pleasures</a></li>
+                        </ul>
+                    </li>
                 </ul>
             </div>
             <div class="logo">
@@ -40,8 +63,7 @@
     <section class="fix">
         <div class="bxslider">
             <img src="images/main_ban0.jpg" alt="img1" title="banner1">
-            <img src="images/main_ban4.jpg" alt="img2" title="banner2">
-            <img src="images/main_ban1.jpg" alt="img3" title="banner3">
+            <img src="images/main_ban4.jpg" alt="img2" title="banner2"> + <img src="images/main_ban1.jpg" alt="img3" title="banner3">
         </div>
 
     </section>
@@ -221,6 +243,39 @@
                 slideWidth: 1100, //가변으로 지정할때 최대값
                 pause: 3500 // 정지시간
 
+            });
+        });
+
+    </script>
+    <script>
+        $(function() {
+            console.log('hi');
+            $('.main_nav1> ul > li').stop().mouseover(function() {
+                $(this).find('.dep2').stop().slideDown(500);
+            });
+
+            $('.main_nav1> ul > li').stop().mouseleave(function() {
+                $(this).find('.dep2').stop().slideUp(500);
+            });
+        });
+
+        $(function() {
+            console.log('hi');
+            $('.main_nav2> ul > li').stop().mouseover(function() {
+                $(this).find('.dep2').stop().slideDown(500);
+            });
+
+            $('.main_nav2> ul > li').stop().mouseleave(function() {
+                $(this).find('.dep2').stop().slideUp(500);
+            });
+        });
+
+    </script>
+    <script>
+        $(function() {
+            $('#menubtn').click(function() {
+                //$('#menu')toggleClass('on');
+                $('#menu').slideToggle();
             });
         });
 

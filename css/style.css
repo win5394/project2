@@ -1,20 +1,13 @@
 /*******초기화 코드********/
 
-@import url(http://fonts.googleapis.com/earlyaccess/jejugothic.css);
-@font-face {
-    font-family: 'Jeju Gothic', sans-serif;
-    src: url('/fonts/Roboto-Regular.eot');
-}
+/*
+@import url();
 
 @font-face {
-    font-family: 'Jeju Gothic', sans-serif;
-    src: url('/fonts/Roboto-Regular.otf');
-}
-
-@font-face {
-    font-family: 'Jeju Gothic', sans-serif;
-    src: url('/fonts/Roboto-Regular.ttf');
-}
+    font-family: ng;
+    src: url(JejuGothic.eot);
+    src: local(※), url(JejuGothic.woff) format('woff')
+}*/
 
 * {
     padding: 0;
@@ -38,7 +31,7 @@ img {
 /***************/
 
 body {
-    font-family: 'Jeju Gothic', sans-serif;
+    font-family: 'JejuGothic', sans-serif;
     text-align: center;
 }
 
@@ -50,7 +43,7 @@ header {
 }
 
 .header_inner {
-    max-width: 1200px;
+    max-width: 1400px;
     min-width: 1100px;
     height: 120px;
     position: relative;
@@ -68,17 +61,17 @@ header {
 .main_nav1 > ul {
     position: absolute;
     margin-top: 50px;
-    font-size: 19px;
+    font-size: 20px;
 }
 
 .main_nav2 > ul {
     position: absolute;
     margin-top: 50px;
-    font-size: 19px;
+    font-size: 20px;
 }
 
 .main_nav1 > ul {
-    left: 10%;
+    left: 5%;
     box-sizing: border-box;
     height: 25px;
     text-align: center;
@@ -86,7 +79,7 @@ header {
 
 .main_nav1 > ul > li {
     float: left;
-    margin-right: 120px;
+    margin-right: 40px;
     padding: 5px;
 }
 
@@ -102,7 +95,7 @@ header {
 
 
 .main_nav2 > ul {
-    right: 10%;
+    right: 5%;
     box-sizing: border-box;
     height: 25px;
     text-align: center;
@@ -111,11 +104,19 @@ header {
 .main_nav2 > ul > li {
     float: left;
     padding: 5px;
-    margin-left: 120px;
+    margin-left: 60px;
+}
+
+.dep2 {
+    display: none;
 }
 
 .header_inner a {
     color: #d6b26e;
+}
+
+.bottom_img {
+    overflow: hidden;
 }
 
 .fix {
@@ -236,6 +237,7 @@ header {
 
 .scale {
     transition: all 0.5s ease-in-out;
+    width: 50%;
 }
 
 .scale:hover {
@@ -390,4 +392,41 @@ header {
     color: #aa946b;
 }
 
-/**********푸터 메뉴 호버 **********/
+.pop1,
+.pop2 {
+    display: none;
+
+}
+
+@media screen and (min-width:599px) {
+    body {
+        background: pink;
+    }
+    .pop1,
+    .pop2 {
+        display: none;
+
+    }
+}
+
+@media screen and (min-width:768px) {
+    body {
+        background: pink;
+    }
+    .pop1,
+    .pop2 {
+        display: none;
+
+    }
+}
+
+@media screen and (min-width: 1190px) {
+    body {
+        background: purple;
+    }
+    .pop1,
+    .pop2 {
+        display: block;
+
+    }
+}
